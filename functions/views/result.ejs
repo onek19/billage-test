@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("./head") %>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+    <div class="container" id="rCon">
+        <div class="restitle">
+            <p class="rtest">성격 유형 테스트</p>
+            <p class="rtitle"><mark>나는 무슨 토끼일까?</mark></p>
+        </div>
+        <div class="resultbox">
+            <div class="result"></div>
+        </div>
+        <div class="imgbox"><img class="resultimg" src=""></div>
+        <div class="hashtag"></div>
+        <div class="description"></div>
+        <div class="partnerbox">
+            <div>
+                <div class="ptitle">최고의 파트너</div>
+                <div class="pname"></div>
+            </div>
+            <div class="pimgbox"><img class="pimg" src=""></div>
+        </div>
+        <div class="storebox">
+            <div class="stitle">추천하는 독립서점</div>
+            <div class="storegrid">
+                <div class="simgbox"><img class="simg" src="/images/store1.jpg"></div>
+                <div class="scontent">
+                    <div class="sname">책방이웃</div>
+                    <div class="sinfo">작은 출판사의 개성있는 책, 독립출판물과 굿즈를 다룹니다. 어디까지 쓸 수 있는지는 조금 두고봅시다!</div>
+                </div>
+            </div>
+            <button class="formore">더 알아보기</button>
+        </div>
+        <span class="sharelabel">친구들과 결과 공유하기</span>
+
+        <div class="shares">
+            <div class="f">
+                <a>
+                    <img class="share f" src="/images/facebook.png">
+                </a>
+            </div>
+            <div class="tw">
+                <a>
+                    <img class="share tw" src="/images/tweeter.png">
+                </a>
+            </div>
+            <div class="k">
+                <a id="kakao-link-btn">
+                    <img class="share k" src="/images/kakao.png"/>
+                </a>
+            </div>
+            <div class="copylink">
+                <a>
+                    <img class="share l" src="/images/link.png">
+                </a>
+            </div>
+        </div>
+        <button class="again">테스트 다시 하기</button>
+        <button class="alltype">전체 유형 보기</button>
+
+        <footer>
+            <%- include ("./footer") %>
+        </footer>
+    </div>
+
+    <% if(resid) { %>
+        <script>
+            const resultId = <%= resid %>;
+        </script>
+    <% } %>
+
+    <script type="module" src="/javascripts/result.js"></script>
+    <script type="module" src="/javascripts/share.js"></script>
+</body>
+</html>

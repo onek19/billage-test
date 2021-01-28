@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0">
+    
+    <meta name="name" content="심리테스트, 성격 유형 테스트, 성격 테스트, mbti 테스트, 빌리지, 토끼 테스트, billage, Billage, test, mbti, MBTI" />
+    <meta name="robots" content="index,follow"/>
+    <meta name="Author" content="wonkyeonglee"/>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나는 무슨 토끼일까?">
+    <meta property="og:description" content="빌리지와 함께하는 성격 유형 테스트">
+    <meta property="og:image" content="https://billage-test.web.app/images/cover.jpg">
+    <meta property="og:url" content="https://billage-test.web.app/">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://billage-test.web.app/" />
+    <meta name="twitter:title" content="나는 무슨 토끼일까?" />
+    <meta name="twitter:description" content="빌리지와 함께하는 성격 유형 테스트" /> 
+    <meta name="twitter:image" content="https://billage-test.web.app/images/cover.jpg" />
+    
+    <title>나는 무슨 토끼일까?</title>
+    
+    <!-- web font -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    
+    <!-- my css  -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+
+</head>
+<body>
+  <div class="container" id="iCon">
+    <p class="itest">성격 유형 테스트</p>
+    <p class="ititle"><mark>나는 무슨 토끼일까?</mark></p>
+    <div class="landingImgCon">
+        <img class="landing-img" src="/images/landing.png">
+    </div>
+    <button class="srt" href="/question">테스트<br>시작하기</button>
+    <div class="logoCon">
+        <img class="logo-img" src="/images/logo.png">
+    </div>
+</div>
+
+<script>
+  const srt = document.querySelector('.srt');
+  srt.onclick = () => {location.href = '/question';}
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script type="module">
+  import {firebaseConfig} from './javascripts/api-keys.js';
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
