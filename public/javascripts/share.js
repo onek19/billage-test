@@ -68,4 +68,3 @@ const copy = () => {
 copylink.addEventListener('click', () => {
   copy();
 });
-q
