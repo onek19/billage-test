@@ -37,15 +37,14 @@
 
 ##  ✅ To-do 2 : Kakao api
 - 카카오 공유하기 기능은 Kakao javascript api key를 필요로 합니다. [자세한 내용](https://developers.kakao.com/)
- <details>
-    <summary>상세 보기</summary>
+  <details>
+      <summary>상세 보기</summary>
 
-   - kakao developers 애플리케이션 추가 후 JavaScript 키 사용
-   - `share.js`에서 `Kakao.init (api_key)` 설정
-   - 메시지의 형식은 `sendLink()` 내에서 `Kakao.Link.sendDefault()`로 설정
-   - [자세한 내용](https://developers.kakao.com/docs/latest/ko/message/js)
-
-</details>
+    - kakao developers 애플리케이션 추가 후 JavaScript 키 사용
+    - `share.js`에서 `Kakao.init (api_key)` 설정
+    - 메시지의 형식은 `sendLink()` 내에서 `Kakao.Link.sendDefault()`로 설정
+    - [자세한 내용](https://developers.kakao.com/docs/latest/ko/message/js)
+  </details>
 
 <br>
 

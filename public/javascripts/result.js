@@ -9,6 +9,7 @@ const alltype = document.querySelector('.alltype');
 const pname = document.querySelector('.pname');
 const pimgbox = document.querySelector('.pimgbox');
 const sname = document.querySelector('.sname');
+const slocation = document.querySelector('.slocation');
 const simgbox = document.querySelector('.simgbox');
 const sinfo = document.querySelector('.sinfo');
 const formore = document.querySelector('.formore');
@@ -34,11 +35,12 @@ const setResult = (id) => {
 
     sname.innerHTML=res.store.name;
     sinfo.innerHTML=res.store.description;
+    slocation.innerHTML=res.store.location;
     simgbox.innerHTML="<img class=\"simg\" src="+ res.store.imgsrc +">";
-}
 
-formore.onclick = () => {
-    window.open(res.store.instalink);
+    formore.onclick = () => {
+        window.open(res.store.instalink);
+    }
 }
 
 again.onclick = () => {
