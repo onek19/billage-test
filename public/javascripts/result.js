@@ -14,17 +14,18 @@ const simgbox = document.querySelector('.simgbox');
 const sinfo = document.querySelector('.sinfo');
 const formore = document.querySelector('.formore');
 
-const resultobj = results.filter(x => {
-    return x.id === resultId;
-});
-const res = resultobj[0];
-
-const partnerobj = results.filter(y => {
-    return y.id === res.partner;
-})
-const ptn = partnerobj[0];
 
 const setResult = () => {
+    const resultobj = results.filter(x => {
+        return x.id === resultId;
+    });
+    const res = resultobj[0];
+    
+    const partnerobj = results.filter(y => {
+        return y.id === res.partner;
+    })
+    const ptn = partnerobj[0];
+    
     hashtag.innerHTML=res.content.hashtag;
     name.innerHTML = res.content.name;
     imgbox.innerHTML = "<img class=\"resultimg\" src="+ res.content.imgsrc +">";

@@ -58,3 +58,8 @@ firebase serve
 ## 💖 Contributors
 - wonkyeong lee 이원경 : Full Stack Development, Design
 - [@billage_book](https://www.instagram.com/billage_book/) : PM, Design
+
+<br>
+
+## Etc.
+- pictograms from [#flaticon](https://www.flaticon.com/)
