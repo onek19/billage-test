@@ -108,7 +108,7 @@ mark {
 
 .loading-txt {
     font-family: 'BMJUA';
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 500;
     color: #5a7b6a;
 }
@@ -242,7 +242,7 @@ mark {
 }
 
 .restitle {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.2;
 }
 
@@ -273,8 +273,8 @@ mark {
 }
 
 .resultimg {
-    width : 250px;
-    height : 250px;
+    width : 25rem;
+    height : 25rem;
     object-fit : cover;
 }
 
@@ -283,9 +283,8 @@ mark {
     font-size: 2rem;
     font-weight: 700;
     line-height: 140%;
-    margin: 2rem auto;
+    margin: 3rem auto 2rem auto;
 }
-
 
 .description {
     width: 85%;
@@ -336,7 +335,7 @@ mark {
     margin : 3rem 0;
     font-weight: 700;
     font-size: 1.6rem;
-    line-height: 27px;
+    line-height: 2.3rem;
 }
 
 .storebox {
@@ -378,7 +377,6 @@ mark {
 }
 
 .sinfo {
-    text-align: justify;
     word-break: break-all;
     font-size: 1.4rem;
     letter-spacing: -0.1px;
@@ -402,7 +400,7 @@ mark {
     background-color: #f5efeb;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 400px) {
     .hashtag {
         font-size: 1.8rem;
     }
@@ -428,6 +426,12 @@ mark {
     .simg {
         width: 10rem;
         height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 9px;
     }
 }
 
@@ -524,11 +528,11 @@ mark {
 }
 
 .type-img {
-    height: 110px;
+    height: 11rem;
 }
 
 .i1, .type-img-src {
-    width : 100px;
+    width : 10rem;
 }
 
 .typelink {
@@ -570,7 +574,7 @@ mark {
 
 .type-name {
     line-height: 120%;
-    font-size: 13px;
+    font-size: 1.4rem;
     text-decoration: none
 }
 
@@ -582,6 +586,12 @@ mark {
 
 #aCon .again:hover {
     background:#bed9c6;
+}
+
+@media only screen and (max-width: 400px) {
+    .type-name {
+        font-size: 1.25rem;
+    }
 }
 
 /*footer*/

@@ -14,7 +14,7 @@ const questions = [
       id: 2,
       content: {
         imgsrc : '/images/q2.png',
-        question: '나는 이럴 때 책을 찾는다',
+        question: '나는 이럴 때 책을 찾는다!',
         options: [
           { id: 1, title: '지친 마음을 위로 받고 싶을 때' },
           { id: 2, title: '몰랐던 지식을 얻어가고 싶을 때' },
