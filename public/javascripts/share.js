@@ -1,5 +1,7 @@
 import {results} from './data.js';
-import {kakao_key} from './api-keys.js'
+import {firebaseConfig, kakao_key} from './api-keys.js'
+
+firebase.initializeApp(firebaseConfig);
 
 const url = "https://billage-test.web.app/";
 const curUrl = url+'result/'+resultId;

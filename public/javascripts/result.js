@@ -52,6 +52,4 @@ alltype.onclick = () => {
     location.href = '/all';
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    setResult();
-});
+setResult();

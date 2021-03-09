@@ -23,6 +23,7 @@
 
     <meta name="google-site-verification" content="nWJx2f2qKfZCTgsQUDtz9ao-_ezwACx9QiKu-JG_es8" />
     <meta name="naver-site-verification" content="6f7ecb3712ef3a2613e9b0a7a1325071c4d39fd1" />
+    <script data-ad-client="ca-pub-8197996284389263" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     
     <title>나는 무슨 토끼일까?</title>
     
@@ -45,11 +46,6 @@
     </div>
 </div>
 
-<script>
-  const srt = document.querySelector('.srt');
-  srt.onclick = () => {location.href = '/question';}
-</script>
-
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
 
@@ -59,5 +55,14 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+
+<script>
+  const srt = document.querySelector('.srt');
+  srt.onclick = () => {
+    location.href = '/question';
+    firebase.analytics().logEvent('testStart');
+  }
+</script>
+
 </body>
 </html>
